@@ -67,14 +67,14 @@ while (number < rock.length){
 changeViewButtons(rock);
 // Modification n°8
 var fils = document.getElementsByClassName("row")
-console.log(fils[0]);
-var parent = fils[0].parentNode;
+console.log(fils[1]);
+var parent = fils[1].parentNode;
 console.log(parent);
 var create = document.createElement('div');
 create.setAttribute('class','row');
+parent.appendChild(create);
 var cardjs = document.getElementsByClassName("card");
 console.log(cardjs[2]);
-create.appendChild(cardjs[2]);
+create.appendChild(cardjs[2].parentNode);
 console.log(create);
-parent.appendChild(create);
 console.log(parent);
